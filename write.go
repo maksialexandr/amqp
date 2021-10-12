@@ -55,6 +55,7 @@ func (f *methodFrame) write(w io.Writer) (err error) {
 //
 // Payload is empty
 func (f *heartbeatFrame) write(w io.Writer) (err error) {
+	print("111111111111111111111111111111")
 	return writeFrame(w, frameHeartbeat, f.ChannelId, []byte{})
 }
 
