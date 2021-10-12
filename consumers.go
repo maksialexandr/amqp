@@ -26,7 +26,7 @@ func commandNameBasedUniqueConsumerTag(commandName string) string {
 	tagSuffix := "-" + strconv.FormatUint(atomic.AddUint64(&consumerSeq, 1), 10)
 
 	if len(tagPrefix)+len(tagInfix)+len(tagSuffix) > consumerTagLengthMax {
-		tagInfix = "streadway/amqp"
+		tagInfix = "maksialexandr/amqp"
 	}
 
 	return tagPrefix + tagInfix + tagSuffix
