@@ -23,7 +23,7 @@ const (
 
 	defaultHeartbeat         = 10 * time.Second
 	defaultConnectionTimeout = 30 * time.Second
-	defaultProduct           = "https://github.com/streadway/amqp"
+	defaultProduct           = "https://github.com/maksialexandr/amqp"
 	defaultVersion           = "β"
 	// Safer default that makes channel leaks a lot easier to spot
 	// before they create operational headaches. See https://github.com/rabbitmq/rabbitmq-server/issues/1593.
